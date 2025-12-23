@@ -12,7 +12,7 @@ class Priority(IntEnum):
     high = 1
 
 class TodoBase(BaseModel):
-    todo_name: str = Field(..., min_length=3, max_length=502, description="Name of the todo")
+    todo_name: str = Field(..., min_length=3, max_length=502, description="Tester")
     todo_descripstion: str = Field(..., description="Description of the todo")
     priority: Priority = Field(default=Priority.low, description="Priority of the todo")
 
